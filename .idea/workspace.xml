@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CC1.java" afterDir="false" />
-    </list>
+    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="第一次提交，分析CC1-transformedMap方式完整过程" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,12 +66,24 @@
       <updated>1720577994300</updated>
       <workItem from="1720577995427" duration="9124000" />
       <workItem from="1720597763800" duration="1821000" />
-      <workItem from="1720677432493" duration="12029000" />
+      <workItem from="1720677432493" duration="15015000" />
     </task>
+    <task id="LOCAL-00001" summary="第一次提交，分析CC1-transformedMap方式完整过程">
+      <created>1720704485360</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720704485360</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第一次提交，分析CC1-transformedMap方式完整过程" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一次提交，分析CC1-transformedMap方式完整过程" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
