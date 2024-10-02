@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="更新CC4">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CC7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CC1_LazyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CC1_LazyMap.java" afterDir="false" />
-    </list>
+    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="更新CC7" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,7 +184,7 @@
       <workItem from="1727846492792" duration="163000" />
       <workItem from="1727848752146" duration="2087000" />
       <workItem from="1727850860139" duration="7442000" />
-      <workItem from="1727858434391" duration="1276000" />
+      <workItem from="1727858434391" duration="1518000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交，分析CC1-transformedMap方式完整过程">
       <created>1720704485360</created>
@@ -240,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1727846521401</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="更新CC7">
+      <created>1727860002843</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1727860002843</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +265,8 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="更新CC3" />
     <MESSAGE value="更新CC4" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新CC4" />
+    <MESSAGE value="更新CC7" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新CC7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -290,7 +293,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/CC7.java</url>
-          <line>56</line>
+          <line>55</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -330,13 +333,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/CC7.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/CC7.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="81" />
+          <line>42</line>
+          <option name="timeStamp" value="82" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="org.apache.commons.collections.FunctorException" package="org.apache.commons.collections" />
