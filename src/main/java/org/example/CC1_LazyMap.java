@@ -53,6 +53,6 @@ public class CC1_LazyMap {
         oos.writeObject(handler);
         oos.close();
         ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(barr.toByteArray()));
-        Object o = (Object)ois.readObject();
+        ois.readObject();
     }
 }

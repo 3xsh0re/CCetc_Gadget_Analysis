@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="更新CC3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CC4.java" afterDir="false" />
+    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="更新CC4">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CC7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CC1_LazyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CC1_LazyMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +60,11 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.32542372&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Debugger_Data_Views_Java&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.CC4">
+  <component name="RunManager" selected="Application.CC7">
     <configuration name="CC1" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_65" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -120,15 +120,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CC7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_92" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CC7" />
+      <module name="CCLink_Demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.CC6" />
       <item itemvalue="Application.CC1" />
+      <item itemvalue="Application.CC7" />
       <item itemvalue="Application.CC4" />
       <item itemvalue="Application.CC3" />
       <item itemvalue="Application.CC1_LazyMap" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CC7" />
         <item itemvalue="Application.CC4" />
         <item itemvalue="Application.CC3" />
         <item itemvalue="Application.CC1_LazyMap" />
@@ -169,6 +186,10 @@
       <workItem from="1727781319310" duration="237000" />
       <workItem from="1727783147163" duration="3299000" />
       <workItem from="1727786893365" duration="1325000" />
+      <workItem from="1727846492792" duration="163000" />
+      <workItem from="1727848752146" duration="2087000" />
+      <workItem from="1727850860139" duration="7442000" />
+      <workItem from="1727858434391" duration="1276000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交，分析CC1-transformedMap方式完整过程">
       <created>1720704485360</created>
@@ -212,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1727781389907</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="更新CC4">
+      <created>1727846521401</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1727846521401</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +262,8 @@
     <MESSAGE value="更新CC1-LazyMap&amp;CC6" />
     <MESSAGE value="update README.md" />
     <MESSAGE value="更新CC3" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新CC3" />
+    <MESSAGE value="更新CC4" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新CC4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -250,11 +279,6 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../path/to/local/repo/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1-sources.jar!/org/apache/commons/collections/map/LazyMap.java</url>
-          <line>157</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://C:/Program Files/Java/jdk1.8.0_65/src/sun/reflect/annotation/AnnotationInvocationHandler.java</url>
           <line>450</line>
           <option name="timeStamp" value="65" />
@@ -263,6 +287,56 @@
           <url>jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/PriorityQueue.java</url>
           <line>794</line>
           <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/CC7.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/AbstractMap.java</url>
+          <line>468</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/Hashtable.java</url>
+          <line>1220</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/Hashtable.java</url>
+          <line>1188</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/util/Hashtable.java</url>
+          <line>1194</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/util/Hashtable.java</url>
+          <line>1220</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/Hashtable.java</url>
+          <line>1218</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/Hashtable.java</url>
+          <line>1192</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/CC7.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/CC7.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="81" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="org.apache.commons.collections.FunctorException" package="org.apache.commons.collections" />
@@ -276,14 +350,20 @@
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="org.apache.commons.collections.map.LazyMap" memberName="factory" />
         <PinnedItemInfo parentTag="java.util.HashMap" memberName="entrySet" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="hashtable.table[1]" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CCLink_Demo$CC4.ic" NAME="CC4 Coverage Results" MODIFIED="1727787867172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.example.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/CCLink_Demo$CC6.ic" NAME="CC6 Coverage Results" MODIFIED="1726319451852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CCLink_Demo$CC6.ic" NAME="CC6 Coverage Results" MODIFIED="1727856650687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
