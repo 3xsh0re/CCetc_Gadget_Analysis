@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="Update README.md">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CC8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="更新CC-8">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CC8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CC8.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +204,7 @@
       <workItem from="1727858434391" duration="1518000" />
       <workItem from="1727860055119" duration="59000" />
       <workItem from="1728134223210" duration="517000" />
-      <workItem from="1728134757270" duration="3771000" />
+      <workItem from="1728134757270" duration="4240000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交，分析CC1-transformedMap方式完整过程">
       <created>1720704485360</created>
@@ -270,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1727860107608</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="更新CC-8">
+      <created>1728139241408</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728139241408</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +301,8 @@
     <MESSAGE value="更新CC4" />
     <MESSAGE value="更新CC7" />
     <MESSAGE value="Update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
+    <MESSAGE value="更新CC-8" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新CC-8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -367,7 +374,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/CC8.java</url>
-          <line>64</line>
+          <line>65</line>
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <breakpoint type="java-exception">
