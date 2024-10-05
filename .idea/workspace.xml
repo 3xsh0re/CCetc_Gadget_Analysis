@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="更新CC-8">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CC5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CC6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CC6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CC8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CC8.java" afterDir="false" />
-    </list>
+    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="更新CC-5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -219,7 +213,7 @@
       <workItem from="1728141236616" duration="1743000" />
       <workItem from="1728143040273" duration="751000" />
       <workItem from="1728143801021" duration="125000" />
-      <workItem from="1728143989213" duration="368000" />
+      <workItem from="1728143989213" duration="531000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交，分析CC1-transformedMap方式完整过程">
       <created>1720704485360</created>
@@ -298,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728139406624</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="更新CC-5">
+      <created>1728144503120</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728144503120</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +325,8 @@
     <MESSAGE value="更新CC7" />
     <MESSAGE value="Update README.md" />
     <MESSAGE value="更新CC-8" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新CC-8" />
+    <MESSAGE value="更新CC-5" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新CC-5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
