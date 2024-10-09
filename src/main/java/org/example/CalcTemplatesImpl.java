@@ -1,10 +1,12 @@
 package org.example;
 
-import org.apache.xalan.xsltc.DOM;
-import org.apache.xalan.xsltc.TransletException;
-import org.apache.xalan.xsltc.runtime.AbstractTranslet;
-import org.apache.xml.dtm.DTMAxisIterator;
-import org.apache.xml.serializer.SerializationHandler;
+
+
+import com.sun.org.apache.xalan.internal.xsltc.DOM;
+import com.sun.org.apache.xalan.internal.xsltc.TransletException;
+import com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet;
+import com.sun.org.apache.xml.internal.dtm.DTMAxisIterator;
+import com.sun.org.apache.xml.internal.serializer.SerializationHandler;
 
 import java.io.IOException;
 

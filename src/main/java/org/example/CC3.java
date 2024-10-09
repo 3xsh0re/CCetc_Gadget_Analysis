@@ -7,14 +7,9 @@ import org.apache.commons.collections.Transformer;
 import org.apache.commons.collections.functors.ChainedTransformer;
 import org.apache.commons.collections.functors.ConstantTransformer;
 import org.apache.commons.collections.functors.InstantiateTransformer;
-import org.apache.commons.collections.functors.InvokerTransformer;
 import org.apache.commons.collections.keyvalue.TiedMapEntry;
 import org.apache.commons.collections.map.LazyMap;
-import org.apache.xalan.xsltc.DOM;
-import org.apache.xalan.xsltc.TransletException;
-import org.apache.xalan.xsltc.runtime.AbstractTranslet;
-import org.apache.xml.dtm.DTMAxisIterator;
-import org.apache.xml.serializer.SerializationHandler;
+
 
 import javax.xml.transform.Templates;
 import java.io.ByteArrayInputStream;
