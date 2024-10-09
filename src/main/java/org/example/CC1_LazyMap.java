@@ -17,6 +17,14 @@ import java.lang.reflect.Proxy;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+*AnnotationInvocationHandler.readObject()
+* ->Map(Proxy).entrySet()
+*  ->AnnotationHandler.Invoke()
+*   ->LazyMap.get()
+*    ->ChainedTransformer.transform()
+*     ->InvokerTransformer.transform()
+* */
 public class CC1_LazyMap {
     public static void main(String[] args) throws Exception {
         // 第一层

