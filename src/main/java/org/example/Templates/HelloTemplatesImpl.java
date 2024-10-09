@@ -1,6 +1,4 @@
-package org.example;
-
-
+package org.example.Templates;
 
 import com.sun.org.apache.xalan.internal.xsltc.DOM;
 import com.sun.org.apache.xalan.internal.xsltc.TransletException;
@@ -8,9 +6,7 @@ import com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet;
 import com.sun.org.apache.xml.internal.dtm.DTMAxisIterator;
 import com.sun.org.apache.xml.internal.serializer.SerializationHandler;
 
-import java.io.IOException;
-
-public class CalcTemplatesImpl extends AbstractTranslet {
+public class HelloTemplatesImpl extends AbstractTranslet {
     public void transform(DOM document, SerializationHandler[] handlers)
             throws TransletException {
     }
@@ -19,7 +15,8 @@ public class CalcTemplatesImpl extends AbstractTranslet {
                           SerializationHandler handler) throws TransletException {
     }
 
-    public CalcTemplatesImpl() throws IOException {
-        Runtime.getRuntime().exec("calc");
+    public HelloTemplatesImpl() {
+        super();
+        System.out.println("Hello TemplatesImpl");
     }
 }

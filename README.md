@@ -12,3 +12,4 @@
 - CC-8
 - CC-5
 - CB-1
+- CB-Shiro

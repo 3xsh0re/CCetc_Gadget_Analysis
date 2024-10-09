@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="更新CB-1">
+    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="新增链子中各个方法调用关系注释">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SerUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ShiroAttack/CB_Shiro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ShiroAttack/EncPayload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CB1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CB1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CC1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CC1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CC1_LazyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CC1_LazyMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CC3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CC3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CC4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CC4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CC5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CC5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CC6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CC6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CC7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CC7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CC8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CC8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CalcTemplatesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Templates/CalcTemplatesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HelloTemplatesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Templates/HelloTemplatesImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,63 +50,64 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/path/to/local/repo/xalan/xalan/2.7.2/xalan-2.7.2.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.32542372&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "JavaClassFindUsagesOptions.isSearchForTextOccurrences": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/path/to/local/repo/xalan/xalan/2.7.2/xalan-2.7.2.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.32542372",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.CC8">
+}]]></component>
+  <component name="RunManager" selected="Application.CB_Shiro">
+    <configuration name="CB1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_92" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CB1" />
+      <module name="CCLink_Demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CB_Shiro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.ShiroAttack.CB_Shiro" />
+      <module name="CCLink_Demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.ShiroAttack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CC1" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_65" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.example.CC1" />
       <module name="CCLink_Demo" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CC1_LazyMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.CC1_LazyMap" />
-      <module name="CCLink_Demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CC3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_92" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="org.example.CC3" />
-      <module name="CCLink_Demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,7 +119,7 @@
       <module name="CCLink_Demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.Templates.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,7 +141,7 @@
       <module name="CCLink_Demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.Templates.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,7 +154,7 @@
       <module name="CCLink_Demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.Templates.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,19 +165,19 @@
     <list>
       <item itemvalue="Application.CC6" />
       <item itemvalue="Application.CC1" />
+      <item itemvalue="Application.CB1" />
+      <item itemvalue="Application.CB_Shiro" />
       <item itemvalue="Application.CC7" />
-      <item itemvalue="Application.CC1_LazyMap" />
       <item itemvalue="Application.CC5" />
       <item itemvalue="Application.CC8" />
-      <item itemvalue="Application.CC3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CB_Shiro" />
+        <item itemvalue="Application.CB1" />
         <item itemvalue="Application.CC8" />
         <item itemvalue="Application.CC7" />
         <item itemvalue="Application.CC5" />
-        <item itemvalue="Application.CC3" />
-        <item itemvalue="Application.CC1_LazyMap" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +232,8 @@
       <workItem from="1728393065855" duration="6525000" />
       <workItem from="1728447147513" duration="1607000" />
       <workItem from="1728448894438" duration="1802000" />
-      <workItem from="1728450775385" duration="2296000" />
+      <workItem from="1728450775385" duration="2699000" />
+      <workItem from="1728454598399" duration="8530000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交，分析CC1-transformedMap方式完整过程">
       <created>1720704485360</created>
@@ -333,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728447201108</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="新增链子中各个方法调用关系注释">
+      <created>1728453140345</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1728453140345</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +369,8 @@
     <MESSAGE value="更新CC-5" />
     <MESSAGE value="更新README.md" />
     <MESSAGE value="更新CB-1" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新CB-1" />
+    <MESSAGE value="新增链子中各个方法调用关系注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增链子中各个方法调用关系注释" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -443,11 +451,6 @@
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/CC1.java</url>
-          <line>115</line>
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/CC1_LazyMap.java</url>
           <line>63</line>
           <option name="timeStamp" value="93" />
@@ -473,9 +476,9 @@
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/TreeMap.java</url>
-          <line>551</line>
-          <option name="timeStamp" value="98" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/ShiroAttack/EncPayload.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="org.apache.commons.collections.FunctorException" package="org.apache.commons.collections" />
