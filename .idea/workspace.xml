@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="新增链子中各个方法调用关系注释">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SerUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ShiroAttack/CB_Shiro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ShiroAttack/EncPayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CB1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CB1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CC1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CC1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CalcTemplatesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Templates/CalcTemplatesImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HelloTemplatesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Templates/HelloTemplatesImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="更新CB-Shiro" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -233,7 +224,7 @@
       <workItem from="1728447147513" duration="1607000" />
       <workItem from="1728448894438" duration="1802000" />
       <workItem from="1728450775385" duration="2699000" />
-      <workItem from="1728454598399" duration="8530000" />
+      <workItem from="1728454598399" duration="9064000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交，分析CC1-transformedMap方式完整过程">
       <created>1720704485360</created>
@@ -340,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728453140345</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="更新CB-Shiro">
+      <created>1728475548046</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1728475548046</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +368,8 @@
     <MESSAGE value="更新README.md" />
     <MESSAGE value="更新CB-1" />
     <MESSAGE value="新增链子中各个方法调用关系注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增链子中各个方法调用关系注释" />
+    <MESSAGE value="更新CB-Shiro" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新CB-Shiro" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
