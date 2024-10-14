@@ -9,7 +9,6 @@ import java.lang.reflect.Field;
 import java.util.Base64;
 import java.util.Collections;
 import java.util.PriorityQueue;
-import java.util.Collections.*;
 
 public class CB_Shiro {
     public static void setFieldValue(Object o, String fieldName, Object newVal) throws Exception {

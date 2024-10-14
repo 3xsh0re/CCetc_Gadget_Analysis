@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="Update README.md">
+    <list default="true" id="5adbc941-5d27-4bfd-ad29-cea9cc6eeef0" name="Changes" comment="调整项目结构">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ShiroAttack/CB_Shiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ShiroAttack/CB_Shiro.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,15 +70,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.CB_Shiro">
+  <component name="RunManager" selected="Application.JDK7u21">
     <configuration name="CB1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_92" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="org.example.CB1" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CB.CB1" />
       <module name="CCetc_Gadget_Analysis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.CC.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,6 +87,8 @@
       </method>
     </configuration>
     <configuration name="CB_Shiro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_92" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.example.ShiroAttack.CB_Shiro" />
       <module name="CCetc_Gadget_Analysis" />
       <extension name="coverage">
@@ -100,23 +104,8 @@
     <configuration name="CC1" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_65" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="org.example.CC1" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CC.CC1" />
       <module name="CCetc_Gadget_Analysis" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CC5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_65" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="org.example.CC5" />
-      <module name="CCetc_Gadget_Analysis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.Templates.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,14 +113,14 @@
     <configuration name="CC6" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_92" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="org.example.CC6" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CC.CC6" />
       <module name="CCetc_Gadget_Analysis" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="CC7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.CC7" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CC.CC7" />
       <module name="CCetc_Gadget_Analysis" />
       <extension name="coverage">
         <pattern>
@@ -144,7 +133,7 @@
       </method>
     </configuration>
     <configuration name="CC8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.CC8" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CC.CC8" />
       <module name="CCetc_Gadget_Analysis" />
       <extension name="coverage">
         <pattern>
@@ -156,22 +145,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JDK7u21" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.7" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.example.JDKOrigin.JDK7u21" />
+      <module name="CCetc_Gadget_Analysis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.JDKOrigin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.CC6" />
       <item itemvalue="Application.CC1" />
+      <item itemvalue="Application.JDK7u21" />
       <item itemvalue="Application.CB1" />
       <item itemvalue="Application.CB_Shiro" />
       <item itemvalue="Application.CC7" />
-      <item itemvalue="Application.CC5" />
       <item itemvalue="Application.CC8" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JDK7u21" />
         <item itemvalue="Application.CB_Shiro" />
         <item itemvalue="Application.CB1" />
         <item itemvalue="Application.CC8" />
         <item itemvalue="Application.CC7" />
-        <item itemvalue="Application.CC5" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +234,7 @@
       <workItem from="1728454598399" duration="9774000" />
       <workItem from="1728476998274" duration="200000" />
       <workItem from="1728573097871" duration="631000" />
-      <workItem from="1728873545896" duration="780000" />
+      <workItem from="1728873545896" duration="3748000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交，分析CC1-transformedMap方式完整过程">
       <created>1720704485360</created>
@@ -358,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728476197901</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="调整项目结构">
+      <created>1728883120294</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1728883120294</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +400,8 @@
     <MESSAGE value="新增链子中各个方法调用关系注释" />
     <MESSAGE value="更新CB-Shiro" />
     <MESSAGE value="Update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
+    <MESSAGE value="调整项目结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整项目结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -415,7 +427,7 @@
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/CC7.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/CC/CC7.java</url>
           <line>63</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
@@ -465,12 +477,12 @@
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/CC5.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/CC/CC5.java</url>
           <line>64</line>
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/CC1_LazyMap.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/CC/CC1_LazyMap.java</url>
           <line>63</line>
           <option name="timeStamp" value="93" />
         </line-breakpoint>
@@ -485,7 +497,7 @@
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/CC3.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/CC/CC3.java</url>
           <line>118</line>
           <option name="timeStamp" value="96" />
         </line-breakpoint>
